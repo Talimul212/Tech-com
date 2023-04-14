@@ -27,7 +27,7 @@ const Services = () => {
     ]
 
     return (
-        <div className='mt-40'>
+        <div className='mt-20'>
             <div className='text-center'>
                 <p className='text-5xl mt-2'>How it works</p>
             </div>

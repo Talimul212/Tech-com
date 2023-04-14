@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
 import useToken from '../../hooks/useToken';
+import PrimaryButten from '../../Components/PrimaryButten/PrimaryButten';
 
 const Login = () => {
 
@@ -66,9 +67,10 @@ const Login = () => {
     }
 
     return (
-        <div className='h-[800px] flex justify-center items-center'>
-            <div className='w-96 p-7 shadow-lg rounded-xl'>
-                <h2 className='text-2xl font-semibold text-center mb-6'>Login</h2>
+        <div className='flex justify-center items-center  ' id='heroImg'>
+            <div className="lg:hero-content flex-col lg:flex-row-reverse mx-24   ">
+            <div className='lg:w-full p-7 shadow-lg rounded-xl bg-white  mt-[80px] w-[300px] mb-10' >
+                <h2 className='text-2xl font-semibold text-center mb-6 '>Login</h2>
 
                 <form onSubmit={handleSubmit(handleLogin)}>
                     <div className="form-control w-full ">
@@ -100,7 +102,14 @@ const Login = () => {
                 </form>
                 <p className='font-bold text-center'>New to Tech.com? <Link to='/signup' className='text-secondary'>Create new account</Link></p>
                 <div className='divider'>OR</div>
-                <button onClick={handlerGoogleSingIn} className=' btn btn-primary  bg-gradient-to-r from-primary  to-secondary w-full'>CONTINUE WITH GOOGLE</button>
+                <button onClick={handlerGoogleSingIn} className=' btn btn-primary  bg-gradient-to-r from-primary  to-secondary w-full  '>CONTINUE WITH GOOGLE</button>
+            </div>
+            <div>
+                        <h1 className=" lg:text-5xl text-xl font-bold text-blue-600">How it works
+                        </h1>
+                        <p className="py-6 lg:text-2xl text-md font-semibold">We began Tech.com back in 2020 to give used electronics a new life. Since then, we’ve saved thousands of gadgets from landfills, and paid our customers in the process.</p>
+                        <PrimaryButten>Get start</PrimaryButten>
+                    </div>
             </div>
         </div>
     );

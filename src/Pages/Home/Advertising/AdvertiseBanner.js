@@ -6,7 +6,9 @@ const AdvertiseBanner = ({ item }) => {
     const { user } = useContext(AuthContext);
     const { title, img, price, details, name, resalePrice, condition, location } = item
     const handleBooking = () => {
-
+if(!user){
+    toast.success("login please")
+}
         const booking = {
             buyerName: user.displayName,
             email: user.email,

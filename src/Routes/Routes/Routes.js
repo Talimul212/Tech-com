@@ -76,10 +76,6 @@ const router = createBrowserRouter([
                 element: <PrivateRoute><MyProduct></MyProduct></PrivateRoute>,
             },
             {
-                path: '/dashboard/adddoctor',
-                element: <PrivateRoute><AddDoctor></AddDoctor></PrivateRoute>
-            },
-            {
                 path: '/dashboard/managedoctors',
                 element: <AdminRoute><ManageDoctors></ManageDoctors></AdminRoute>
             },

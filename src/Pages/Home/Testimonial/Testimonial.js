@@ -31,11 +31,14 @@ const Testimonial = () => {
     return (
         <section className='my-16'>
             <div className='flex justify-between'>
-                <div >
-                    <h4 className='text-2xl font-bold text-secondary'>Reviews</h4>
+            <figure className='hidden lg:flex'> 
+                    <img src={quote} className='w-24 lg:w-48 ' alt='' />
+                </figure>
+                <div className='text-center'>
+                    <h4 className='text-2xl font-bold text-secondary '>Reviews</h4>
                     <h1 className='text-4xl'>What Our Reviewers Says</h1>
                 </div>
-                <figure>
+                <figure className='hidden lg:flex'>
                     <img src={quote} className='w-24 lg:w-48' alt='' />
                 </figure>
             </div>

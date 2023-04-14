@@ -1,6 +1,8 @@
 import React from 'react';
+import UseTitle from '../../../hooks/UseTitle';
 
 const Blog = () => {
+UseTitle('Blog')
     return (
         <div className='mt-10'>
             <div tabIndex={0} className=" mb-6 collapse collapse-plus border border-base-300 bg-base-100 rounded-lg">

@@ -22,7 +22,6 @@ const SignUp = () => {
         setSignUpError('');
         createUser(data.email, data.password)
             .then(result => {
-                const user = result.user;
                 toast('User Created Successfully.')
                 const userInfo = {
                     displayName: data.name,
@@ -57,10 +56,10 @@ const SignUp = () => {
     }
 
     return (
-        <div className=' flex justify-center items-center'>
-            <div className="hero rounded-lg mt-10" id='heroImg'>
+        <div className=' flex justify-center items-center '>
+            <div className="hero  " id='heroImg'>
                 <div className="hero-content flex-col lg:flex-row-reverse ">
-                    <div className='w-full p-7 shadow-lg rounded-xl bg-white'>
+                    <div className='lg:w-full p-7 shadow-lg rounded-xl bg-white  mt-[80px] w-[300px]'>
                         <h2 className='text-2xl font-semibold text-center mb-6'>Sign Up</h2>
                         <form onSubmit={handleSubmit(handleSignUp)} >
                             <div className="form-control w-full ">
@@ -96,10 +95,10 @@ const SignUp = () => {
                         <p className='font-bold text-center'>Already have an <Link to='/login' className='text-secondary'> account</Link></p>
 
                     </div>
-                    <div>
-                        <h1 className=" text-5xl font-bold text-blue-600">How it works
+                    <div className='mx-12'>
+                        <h1 className=" lg:text-5xl text-xl font-bold text-blue-600">How it works
                         </h1>
-                        <p className="py-6 text-2xl font-semibold">We began Tech.com back in 2020 to give used electronics a new life. Since then, we’ve saved thousands of gadgets from landfills, and paid our customers in the process.</p>
+                        <p className="py-6 lg:text-2xl text-md font-semibold">We began Tech.com back in 2020 to give used electronics a new life. Since then, we’ve saved thousands of gadgets from landfills, and paid our customers in the process.</p>
                         <PrimaryButten>Get start</PrimaryButten>
                     </div>
                 </div>

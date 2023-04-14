@@ -4,7 +4,7 @@ import PrimaryButten from '../../../Components/PrimaryButten/PrimaryButten';
 import './Banner.css'
 const Banner = () => {
     return (
-        <div className="hero rounded-lg mt-10" id='heroImg'>
+        <div className="hero rounded-lg mt-10 card-bordered" id='heroImg'>
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <img src={BannerImg} className="rounded-lg lg:w-1/2 shadow-2xl" alt='' />
                 <div>
