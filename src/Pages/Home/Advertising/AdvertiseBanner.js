@@ -37,12 +37,12 @@ if(!user){
             })
     }
     return (
-        <div className="card  shadow-xl image-full mt-20 mb-0">
-            <figure><img src={img} alt="" /></figure>
+        <div className="card  shadow-xl  mt-4 mb-0">
+            <figure><img src={img} alt="" className='h-[200px] w-full'/></figure>
             <div className="card-body">
                 <h2 className="card-title font-bold text-2xl">{title
                 }</h2>
-                <p>{details}</p>
+                <p>{details.slice(0, 50)}...</p>
                 <div className='flex justify-between'>
                     <div>
                         <p className='font-bold text-xl'>price:<del>  ${price}</del></p>

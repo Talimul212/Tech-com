@@ -35,10 +35,10 @@ const TopMenu = () => {
                    {
                        i%2===0?
                 <>
-                <div className="pl-5 py-2 text-lg" style={{borderBottomLeftRadius:`${tiny?.border}`,borderBottomRightRadius:`${tiny?.border}`}}>
+                <div className="pl-5 py-2 text-lg" key={tiny?.title} style={{borderBottomLeftRadius:`${tiny?.border}`,borderBottomRightRadius:`${tiny?.border}`}}>
                     <p>{tiny?.title}</p>
                 </div></>:<>
-                <div className="pl-5 py-2 text-lg bg-gray-100 " style={{borderBottomLeftRadius:`${tiny?.border}`,borderBottomRightRadius:`${tiny?.border}`}}>
+                <div className="pl-5 py-2 text-lg bg-gray-100 " key={tiny?.title} style={{borderBottomLeftRadius:`${tiny?.border}`,borderBottomRightRadius:`${tiny?.border}`}}>
                     <p>{tiny?.title}</p>
                 </div>
                 </>

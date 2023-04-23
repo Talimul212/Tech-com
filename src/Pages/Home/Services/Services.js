@@ -40,7 +40,7 @@ const Services = () => {
   return (
     <div className="mt-20 ">
         <div className="text-center">
-          <p className="text-5xl mt-2">How it works</p>
+          <p className="text-4xl mt-2 ">How it works</p>
         </div>
         <div className="mt-10 lg:grid grid-cols-4 gap-9 ">
           {serviceData.map((service) => (

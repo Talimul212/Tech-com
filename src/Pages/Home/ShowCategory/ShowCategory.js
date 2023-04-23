@@ -1,5 +1,5 @@
 import React from 'react';
-import'./ShowCategory.css'
+
 const ShowCategory = () => {
     const image1='https://transvelo.github.io/mediacenter-html/assets/images/banners/banner-narrow-01.jpg'
     const image2='https://transvelo.github.io/mediacenter-html/assets/images/banners/banner-narrow-02.jpg'
