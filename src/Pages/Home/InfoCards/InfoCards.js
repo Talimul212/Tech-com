@@ -29,7 +29,7 @@ const InfoCards = () => {
         }
     ]
     return (
-        <div className='my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6'>
+        <div className='my-8 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6'>
             <div className='grid grid-cols-1 gap-6'>
                 {
                     cardData.map(card => <InfoCard key={card.id} card={card}></InfoCard>)
@@ -42,6 +42,11 @@ const InfoCards = () => {
                 <p className='my-3 text-xl text-primary font-bold'>Message us via</p>
                 <PrimaryButten>Facebook Messenger</PrimaryButten>
 
+            </div>
+            <div className='grid grid-cols-1 gap-6'>
+                {
+                    cardData.map(card => <InfoCard key={card.id} card={card}></InfoCard>)
+                }
             </div>
         </div>
     );
