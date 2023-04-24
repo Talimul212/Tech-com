@@ -18,74 +18,79 @@ import DisplayError from '../../Pages/Shered/DisplayError/DisplayError';
 import SignUp from '../../Pages/SignUp/SignUp';
 import AdminRoute from '../AdminRouter/AdminRouter';
 import PrivateRoute from '../PrivateRoute/PrivateRoute';
+import Contact from '../../Pages/Contact/Contact';
 
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <Main></Main>,
-        errorElement: <DisplayError></DisplayError>,
+        element: <Main/>,
+        errorElement: <DisplayError/>,
         children: [
             {
                 path: '/',
-                element: <Home></Home>
+                element: <Home/>
             },
             {
                 path: '/blog',
                 element: <Blog></Blog>
             },
             {
+                path: '/contact',
+                element: <Contact/>
+            },
+            {
                 path: '/login',
-                element: <Login></Login>
+                element: <Login/>
 
             },
             {
                 path: '/signup',
-                element: <SignUp></SignUp>
+                element: <SignUp/>
 
             },
             {
                 path: '/services',
-                element: <Appointment></Appointment>
+                element: <Appointment/>
             },
             {
                 path: '/detail/:id',
-                element:<PrivateRoute> <Detail></Detail></PrivateRoute>,
+                element:<PrivateRoute> <Detail/></PrivateRoute>,
                 loader:({params})=>fetch(`https://tech-com-server.vercel.app/allServices/${params.id}`)
             }
         ]
     },
     {
         path: '/dashboard',
-        element: <PrivateRoute><DeshbordLayout></DeshbordLayout></PrivateRoute>,
-        errorElement: <DisplayError></DisplayError>,
+        element: <PrivateRoute><DeshbordLayout/></PrivateRoute>,
+        errorElement: <DisplayError/>,
         children: [
             {
                 path: '/dashboard',
-                element: <MyAppointment></MyAppointment>
+                element: <MyAppointment/>
             },
             {
                 path: '/dashboard/allusers',
-                element: <AdminRoute><AllUsers></AllUsers></AdminRoute>
+                element: <AdminRoute><AllUsers/></AdminRoute>
             },
             {
                 path: '/dashboard/addproduct',
-                element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>
+                element: <PrivateRoute><AddProduct/></PrivateRoute>
             },
             {
                 path: '/dashboard/myproduct',
-                element: <PrivateRoute><MyProduct></MyProduct></PrivateRoute>,
+                element: <PrivateRoute><MyProduct/></PrivateRoute>,
             },
             {
                 path: '/dashboard/managedoctors',
-                element: <AdminRoute><ManageDoctors></ManageDoctors></AdminRoute>
+                element: <AdminRoute><ManageDoctors/></AdminRoute>
             },
             {
                 path: '/dashboard/reports',
-                element: <AdminRoute><AllReportsProducts></AllReportsProducts></AdminRoute>
+                element: <AdminRoute><AllReportsProducts/></AdminRoute>
             },
             {
                 path: '/dashboard/payment/:id',
-                element: <PrivateRoute><Payment></Payment></PrivateRoute>,
+                element: <PrivateRoute><Payment/></PrivateRoute>,
                 loader: ({ params }) => fetch(`https://tech-com-server.vercel.app/bookings/${params.id}`)
             },
         ]

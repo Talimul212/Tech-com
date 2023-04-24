@@ -13,6 +13,7 @@ const Navbar = () => {
     <li><Link to='/' className=' rounded-lg font-semibold btn btn-ghost normal-case'>Home</Link></li>
     <li><Link to='/services' className=' font-semibold btn btn-ghost normal-case'>Products</Link></li>
     <li><Link to='/blog' className=' font-semibold btn btn-ghost normal-case'>Blog</Link></li>
+    <li><Link to='/contact' className=' font-semibold btn btn-ghost normal-case'>Contact</Link></li>
 
     {
       user?.uid ?
