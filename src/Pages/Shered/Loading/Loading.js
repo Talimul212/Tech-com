@@ -1,13 +1,15 @@
-import React from 'react';
+import React from "react";
 
 const Loading = () => {
-    return (
-        <div className="flex justify-center items-center text-center">
-            <div className="spinner-border animate-spin inline-block w-8 h-8 border-4 rounded-full" role="status">
-                <span className="visually-hidden">...</span>
-            </div>
-        </div>
-    );
+  return (
+    <div >
+      <progress className="progress w-56" value="0" max="100"></progress>
+      <progress className="progress w-56" value="10" max="100"></progress>
+      <progress className="progress w-56" value="40" max="100"></progress>
+      <progress className="progress w-56" value="70" max="100"></progress>
+      <progress className="progress w-56" value="100" max="100"></progress>
+    </div>
+  );
 };
 
 export default Loading;

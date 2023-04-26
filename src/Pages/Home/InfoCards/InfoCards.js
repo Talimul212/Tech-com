@@ -5,6 +5,7 @@ import phone from "../../../assets/icons/phone.svg";
 import PrimaryButten from "../../../Components/PrimaryButten/PrimaryButten";
 import InfoCard from "./InfoCard";
 import Advertising from "../Advertising/Advertising";
+import Loading from "../../Shered/Loading/Loading";
 const InfoCards = () => {
     const [advertising, setAdvertising] = useState([]);
     useEffect(() => {
@@ -12,6 +13,7 @@ const InfoCards = () => {
             .then(res => res.json())
             .then(data => setAdvertising(data))
     }, [])
+ 
   const cardData = [
     {
       id: 1,
