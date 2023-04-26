@@ -18,7 +18,7 @@ import { toast } from 'react-hot-toast';
 const SellerAds = ({advertising}) => {
 
     const { user } = useContext(AuthContext);
-    const { title,  resalePrice } = advertising
+    const { title,  resalePrice,details } = advertising
     console.log("lolo",advertising);
     const handleBooking = () => {
 if(!user){
@@ -63,7 +63,7 @@ if(!user){
           slidesPerView: 1,
         },
         1024: {
-          slidesPerView: 3,
+          slidesPerView: 2,
         },
       }}
         spaceBetween={30}
@@ -76,24 +76,25 @@ if(!user){
       >
         {advertising.map((item) => (
           <SwiperSlide key={item?.id}>
-            <div className="card card-bordered  mt-4 ">
+            <div className="card card-bordered  mt-4 h-[389px]">
            <figure>
-           <img src={item?.img} alt="" style={{height:"110px"}}/>
+           <img src={item?.img} alt="" style={{height:"180px"}}/>
            </figure>
-            <div className="card-body">
+            <div className=" card-body px-3">
                 <h2 className="card-title font-bold text-xl">{item?.title
                 }</h2>
                 <div className=' text-left'>
                     <div>
-                        <p className='font-bold text-sm'>price:<del>  ${item?.price}</del></p>
-                        <p className='font-bold text-sm'>Resale price: ${item?.resalePrice}</p>
+                        <p className='font-semibold text-sm'>price:<del>  ${item?.price}</del></p>
+                        <p className='font-semibold text-sm'>Resale price: ${item?.resalePrice}</p>
                     </div>
                 </div>
-                <div className="card-actions ">
-                    
-                    <button onClick={handleBooking} className="btn btn-primary text-xs">Order Now</button>
-                </div>
             </div>
+                <p className=' text-base px-3 text-left'>Details: {item?.details.slice(0,30)}.....</p>
+                <div className=" card-body px-2 ">
+                    
+                    <button onClick={handleBooking} className=" btn btn-primary  bg-gradient-to-r from-primary  to-secondary text-stone-50 text-xs w-full p-0">Order Now</button>
+                </div>
         </div>
           </SwiperSlide>
         ))}
