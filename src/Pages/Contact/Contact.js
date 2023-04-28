@@ -1,7 +1,9 @@
 import React from 'react';
 import ContactForm from '../../Components/Form/Contactform/Contactform';
+import UseTitle from '../../hooks/UseTitle';
 
 const Contact = () => {
+  UseTitle('Contact')
     return (
         <>
         <h1 className='text-center font-bold text-3xl'>Contact Us</h1>

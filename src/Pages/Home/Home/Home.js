@@ -1,4 +1,5 @@
 
+import UseTitle from '../../../hooks/UseTitle';
 import About from '../About/About';
 import Advertising from '../Advertising/Advertising';
 import Banner from '../Banner/Banner';
@@ -10,6 +11,7 @@ import TopSection from '../TopSection/TopSection';
 
 
 const Home = () => {
+    UseTitle('Home')
     return (
         <div>
             <TopSection></TopSection>

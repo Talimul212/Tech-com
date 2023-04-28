@@ -19,8 +19,7 @@ const Navbar = () => {
       user?.uid ?
         <>
           <li><Link to='/dashboard' className=' font-semibold btn btn-ghost normal-case '>Dashboard</Link></li>
-          <li><button onClick={handleLogOut} className=' font-semibold btn btn-ghost normal-case'>Log Out</button></li>
-          <li><p className=' font-semibold btn btn-ghost normal-case rounded-lg'>{user?.displayName}</p></li>
+          <li><button onClick={handleLogOut} className=' font-semibold btn btn-ghost normal-case'>Log Out</button></li>     
         </>
         : <>
           <li><Link to='/login' className=' font-semibold btn btn-ghost normal-case'>Login</Link></li>
@@ -51,9 +50,7 @@ const Navbar = () => {
           }
         </ul>
       </div>
-      <label tabIndex={2} htmlFor="dashboard-drawer" className="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-          </label>
+     
     </div>
   );
 };

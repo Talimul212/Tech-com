@@ -3,8 +3,10 @@ import { format } from 'date-fns';
 import React from 'react';
 import Loading from '../../Shered/Loading/Loading';
 import AppointmenOption from './AppointmenOption';
+import UseTitle from '../../../hooks/UseTitle';
 
 const AvailableAppointments = ({ selectedDate }) => {
+    UseTitle('All-Products')
     const date = format(selectedDate, 'PP');
     const { data: appointmenOptions = [], isLoading } = useQuery({
         queryKey: ['appointmentOptions', date],
