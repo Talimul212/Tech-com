@@ -21,8 +21,8 @@ const SellerAds = ({advertising}) => {
   if(!advertising){
     return(<Loading></Loading>)
   }
-    const { title,  resalePrice } = advertising
-    const handleBooking = () => {
+
+    const handleBooking = (title,resalePrice) => {
 if(!user){
     toast.success("login please")
 }
@@ -30,7 +30,7 @@ if(!user){
             buyerName: user.displayName,
             email: user.email,
             laptopName: title,
-            resalePrice
+           price:resalePrice
         }
         //Todo: send data to the server
         //and once data is saved then close the model
@@ -95,7 +95,7 @@ if(!user){
             </div>
                 <div className=" card-body px-2 ">
                     
-                    <button onClick={handleBooking} className=" btn btn-primary  bg-gradient-to-r from-primary  to-secondary text-stone-50 text-xs w-full p-0">Order Now</button>
+                    <button onClick={()=>handleBooking(item?.title,item?.resalePrice)} className=" btn btn-primary  bg-gradient-to-r from-primary  to-secondary text-stone-50 text-xs w-full p-0">Order Now</button>
                 </div>
         </div>
           </SwiperSlide>

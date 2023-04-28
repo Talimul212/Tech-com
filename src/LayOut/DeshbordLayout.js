@@ -11,6 +11,9 @@ const DeshbordLayout = () => {
     const [isAdmin] = useAdmin(user?.email);
     const [isSeller] = useSeller(user?.email)
     const [isBuyer] = useBuyer(user?.email)
+    console.log(user.email);
+    console.log(isAdmin);
+    console.log(isBuyer);
     console.log(isSeller);
     return (
         <div >

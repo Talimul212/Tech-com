@@ -43,7 +43,11 @@ const InfoCards = () => {
     <h2 className='text-4xl text-center 
            '>Here are {advertising.length} top-rating
             laptop advertising</h2> 
-    <div className="my-8 lg:grid grid-cols-12 gap-2">
+    <div className="my-8 lg:grid grid-cols-12 gap-2 ">
+     
+    <div className=" col-span-7 ">
+        <Advertising advertising={advertising}></Advertising>
+      </div>
       <div className=" col-span-5">
         {cardData.map((card) => (
           <InfoCard key={card.id} card={card}></InfoCard>
@@ -60,9 +64,7 @@ const InfoCards = () => {
           <PrimaryButten>Facebook Messenger</PrimaryButten>
         </div>
       </div>
-      <div className=" col-span-7 ">
-        <Advertising advertising={advertising}></Advertising>
-      </div>
+      
     </div>
     </>
   );
