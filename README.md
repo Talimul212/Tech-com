@@ -11,7 +11,7 @@ This is a website made for Resale products. It is about a laptop website. There 
 Email: wab@gmail.com 
 Password: 123456.
 
-### `client Code link : `
+### `client Code link: `
 
 Open [https://github.com/Talimul212/Tech-com](https://github.com/Talimul212/Tech-com) to view it in your browser.
 
