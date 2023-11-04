@@ -8,8 +8,7 @@ In the project directory, you can run:
 ### `Welcome to Talimul Github readme. file `
 This is a website made for Resale products. It is about a laptop website. There are three types of category users. There are buyer, seller and admin. buyer buy only, seller can buy the product and also sell and finally, the admin who can control all user access and  verification user add and select, etc...............................  
 ### `Admin Email and Password:`
-Email: wab@gmail.com 
-Password: 123456.
+
 
 ### `client Code link: `
 
