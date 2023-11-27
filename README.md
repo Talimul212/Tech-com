@@ -5,24 +5,23 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
-### `Welcome to Talimul Github readme.file `
-This is website Which made for Resale product .It about laptop website .There are tree type of categroy user .There are buyer,seller and admin.buyer buy only ,seller can buy the product and also sell and finally admin who can control alluser access and  verification user add and delect etc...............................  
-### `Admin Email and Password :`
-Email: wab@gmail.com 
-Password: 123456.
-
-### `ciliet Code link : `
-
-Open [https://github.com/programming-hero-web-course-4/b612-used-products-resale-clients-side-Talimul212](https://github.com/programming-hero-web-course-4/b612-used-products-resale-clients-side-Talimul212) to view it in your browser.
+### `Welcome to Talimul Github readme. file `
+This is a website made for Resale products. It is about a laptop website. There are three types of category users. There are buyer, seller and admin. buyer buy only, seller can buy the product and also sell and finally, the admin who can control all user access and  verification user add and select, etc...............................  
+### `Admin Email and Password:`
 
 
+### `client Code link: `
 
-### `Server code link : `
-Open [https://github.com/programming-hero-web-course-4/b612-used-products-resale-server-side-Talimul212](https://github.com/programming-hero-web-course-4/b612-used-products-resale-server-side-Talimul212) to view it in your browser.
+Open [https://github.com/Talimul212/Tech-com](https://github.com/Talimul212/Tech-com) to view it in your browser.
 
 
 
-### `Live website link : `
+### `Server code link: `
+Open [https://github.com/Talimul212/Tech-com-server](https://github.com/Talimul212/Tech-com-server) to view it in your browser.
+
+
+
+### `Live website link: `
 Open [https://flourishing-gecko-8cb030.netlify.app/](https://flourishing-gecko-8cb030.netlify.app/) to view it in your browser.
 
 
