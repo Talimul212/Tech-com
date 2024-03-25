@@ -32,21 +32,21 @@ const Services = () => {
       id: 4,
       name: "We have an A+ rating",
       description:
-     "from the Better Business Bureau and boast a near-perfect score on Facebook, Reseller Ratings, Trustpilot and Google Reviews.",
+        "from the Better Business Bureau and boast a near-perfect score on Facebook, Reseller Ratings, Trustpilot and Google Reviews.",
       icon: Reviewimg,
     },
   ];
 
   return (
-    <div className="mt-20 ">
-        <div className="text-center">
-          <p className="text-4xl mt-2 ">How it works</p>
-        </div>
-        <div className="mt-10 lg:grid grid-cols-4 gap-9 ">
-          {serviceData.map((service) => (
-            <Service key={service.id} service={service}></Service>
-          ))}
-        </div>  
+    <div className="mt-20 -z-40 ">
+      <div className="text-center">
+        <p className="text-4xl mt-2 ">How it works</p>
+      </div>
+      <div className="-z-40  mt-10 lg:grid grid-cols-4 gap-9 ">
+        {serviceData.map((service) => (
+          <Service key={service.id} service={service}></Service>
+        ))}
+      </div>
     </div>
   );
 };

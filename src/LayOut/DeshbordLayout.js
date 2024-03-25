@@ -47,7 +47,7 @@ const DeshbordLayout = () => {
           </svg>
         </label>
       </div>
-      <hr />
+
       <div className="drawer drawer-mobile mt-5">
         <input
           id="dashboard-drawer"
@@ -57,9 +57,9 @@ const DeshbordLayout = () => {
         <div className="drawer-content">
           <Outlet></Outlet>
         </div>
-        <div className="drawer-side bg-white shadow-lg rounded-lg">
+        <div className=" drawer-side bg-white shadow-lg rounded-lg">
           <label htmlFor="dashboard-drawer" className="drawer-overlay "></label>
-          <ul className="menu p-4 lg:w-[18vw] w-80 text-base-content text-bold lg:bg-white bg-slate-100 ">
+          <ul className=" menu p-4 lg:w-[18vw] w-80 text-base-content text-bold lg:bg-white bg-slate-100 ">
             <li>
               <img
                 className=" hidden lg:block md:block"

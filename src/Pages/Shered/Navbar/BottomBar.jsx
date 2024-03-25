@@ -1,14 +1,16 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { IoHomeOutline } from "react-icons/io5";
+import { AiOutlineMenuUnfold } from "react-icons/ai";
 import { AuthContext } from "../../../Context/AuthProvider/AuthProvider";
-import navicon from "../../../assets/icons/navicon.png";
-const Navbar = () => {
+const BottomBar = () => {
   const { user, logOut } = useContext(AuthContext);
   const handleLogOut = () => {
     logOut()
       .then(() => {})
       .catch((err) => console.log(err));
   };
+
   const menuItems = (
     <React.Fragment>
       <li>
@@ -83,22 +85,24 @@ const Navbar = () => {
     </React.Fragment>
   );
   return (
-    <div className="navbar  flex justify-between">
-      <div className="navbar-start">
-        <Link to="/" className="flex gap-3 items-center" href="/">
-          <img
-            style={{ width: "60px", height: "60px" }}
-            src={navicon}
-            alt=""
-          ></img>
-          <p className="text-xl hidden lg:block font-semibold">Tech.com</p>
-        </Link>
-      </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal p-0">{menuItems}</ul>
+    <div className=" bg-white w-full border z-[9999]  p-3 flex justify-between fixed bottom-0">
+      <Link to="/">
+        <IoHomeOutline size={"30px"} />
+      </Link>
+      <Link to="/"></Link>
+      <div className="dropdown dropdown-top dropdown-end">
+        <label tabIndex={0} className=" ">
+          <AiOutlineMenuUnfold size={"30px"} />
+        </label>
+        <ul
+          tabIndex={1}
+          className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+        >
+          {menuItems}
+        </ul>
       </div>
     </div>
   );
 };
 
-export default Navbar;
+export default BottomBar;

@@ -2,6 +2,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import Footer from "../Pages/Shered/Footer/Footer";
 import Navbar from "../Pages/Shered/Navbar/Navbar";
+import BottomBar from "../Pages/Shered/Navbar/BottomBar";
 
 const Main = () => {
   return (
@@ -11,6 +12,9 @@ const Main = () => {
         <Outlet></Outlet>
       </div>
       <Footer></Footer>
+      <div className="flex fixed bottom-0 lg:hidden">
+        <BottomBar></BottomBar>
+      </div>
     </div>
   );
 };
