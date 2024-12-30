@@ -27,11 +27,7 @@ const Navbar = () => {
           Products
         </Link>
       </li>
-      <li>
-        <Link to="/blog" className=" font-semibold btn btn-ghost normal-case">
-          Blog
-        </Link>
-      </li>
+
       <li>
         <Link
           to="/contact"
