@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Tech.com
 
 In the project directory, you can run:
 ### `Welcome to Talimul Github readme. file `
