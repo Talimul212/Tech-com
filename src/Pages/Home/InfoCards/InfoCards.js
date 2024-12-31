@@ -46,7 +46,7 @@ const InfoCards = () => {
         className="text-4xl text-center 
            "
       >
-        Here are {advertising.length} top-rating laptop advertising
+        Here are {advertising.length} top-rating laptop
       </h2>
       <div className="my-8 lg:grid grid-cols-12 gap-2 ">
         <div className=" col-span-7 -z-40 ">
